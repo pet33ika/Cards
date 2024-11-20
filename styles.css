@@ -1,0 +1,71 @@
+/* Container to hold all user cards */
+.users-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styling for individual user card */
+.user-container {
+  position: relative;
+  width: 250px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-container:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for user image */
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* User name */
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Email and other details */
+.user-email,
+.user-age,
+.user-info {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Close button */
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem; /* Adjust size of the 'X' */
+  color: #333; /* Neutral color for the close icon */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer;
+  padding: 0;
+  outline: none; /* Remove focus outline */
+  transition: transform 0.2s ease;
+}
+
+.btn-close:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  color: #000; /* Darken the icon on hover */
+}
